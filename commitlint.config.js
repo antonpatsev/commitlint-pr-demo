@@ -1,6 +1,6 @@
 module.exports = {
   parserPreset: {
-    parserOpts: { headerPattern: headerPattern: /\(DEVOPS[^)]*\)$/ }
+    parserOpts: { headerPattern: /\(DEVOPS[^)]*\)$/ }
   },
   rules: {
     "body-leading-blank": [1, "always"],
