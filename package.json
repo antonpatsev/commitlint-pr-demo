@@ -1,6 +1,10 @@
 {
   "devDependencies": {
     "@commitlint/cli": "^12.1.1",
-    "@commitlint/config-conventional": "^12.1.1"
+    "@commitlint/config-conventional": "^12.1.1",
+    "husky": "^8.0.1"
+  },
+  "husky": {
+    "commit-msg": "commitlint --env HUSKY_GIT_PARAMS --config commitlint.config.js"
   }
 }
