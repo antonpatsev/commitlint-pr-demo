@@ -6,13 +6,14 @@ module.exports = {
     parserPreset: {
       parserOpts: {
         headerPattern: /\(DEVOPS[^)]*\)$/,
-        headerCorrespondence: ['scope']
+        headerCorrespondence: ["type", "scope", "subject"]
       }
     },
         rules: {
-          'type-case': [0, 'never'],
           'subject-case': [0, 'never'],
           'subject-empty': [0, 'never'],
+          'type-case': [0, 'never'],
+          "type-empty": [2, "never"],
           'type-enum': [
             2,
             'always',
